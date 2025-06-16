@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gray-950 flex items-center justify-center px-4">
       <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-xl">
         <h1 className="text-2xl font-bold mb-4 text-center">Junior Dev API Tester</h1>
         <form onSubmit={handleTest} className="space-y-4">
@@ -44,7 +44,7 @@ function App() {
           />
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+            className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition"
           >
             {loading ? 'Testing...' : 'Test API'}
           </button>
