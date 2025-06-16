@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000;
+
 
 app.use(express.json());
 app.use(require('cors')());
@@ -24,6 +24,5 @@ app.post('/sort-string', (req, res) => {
   return res.json({ word: sortedArray });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+module.exports = app;
+
